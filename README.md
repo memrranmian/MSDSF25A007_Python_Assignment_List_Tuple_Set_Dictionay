@@ -151,28 +151,7 @@ Understanding the specific characteristics and Big-O efficiency of each data str
 3. Open `MSDSF25A007_Python_Assignment_List_Tuple_Set_Dictionay.ipynb` and execute the cells sequentially.
 4. When prompted by `input()`, enter your values or type `done` / press `Enter` to conclude entry.
 
----
 
-## 🎓 Viva & Quiz Oral Defense Cheat Sheet
-
-### Frequently Asked Questions
-
-* **Q: Why store price and quantity as a tuple inside the inventory dictionary?**  
-  *Answer:* Tuples are lightweight and immutable. Storing `(price, quantity)` guarantees that these paired attributes cannot be partially overwritten or mutated by accident. Updating them requires creating a new tuple, preserving data integrity.
-
-* **Q: Why use a Set for duplicate checking instead of `if item in my_list`?**  
-  *Answer:* A Python list has $O(n)$ search complexity (it scans element-by-element). A Python set is implemented as a hash table with average $O(1)$ constant time complexity, providing instantaneous duplicate verification regardless of dataset size.
-
-* **Q: Why are examination subjects stored in a Tuple rather than a List?**  
-  *Answer:* The syllabus and subject composition for an exam are fixed and should never change during runtime. Using a tuple explicitly communicates immutability and protects against unintended additions or deletions.
-
-* **Q: How does dictionary category aggregation work?**  
-  *Answer:* We use `category_totals[category] = category_totals.get(category, 0.0) + amount`. The `.get()` method safely returns the existing subtotal or defaults to `0.0` if the category is encountered for the first time, preventing `KeyError`.
-
----
-
-## 👨‍💻 Author & Academic Attribution
-* **Name:** Imran (MSDSF25A007)
-* **Program:** Master of Science in Data Science (MSDS)
-* **University / Department:** Faculty of Computing & Data Analytics
+👨‍💻 Author & Academic Attribution
+* **Name:** M Imran Mian
 * **GitHub:** [@memrranmian](https://github.com/memrranmian)
